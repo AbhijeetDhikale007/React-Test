@@ -7,36 +7,9 @@ import Navbar from './Component/Test/Router/Navbar.jsx';
 import Navbar2 from './Component/Test/Navbar/Navbar2.js'
 import Counter from './Component/Test/Counter/Counter.js'
 import { Routes, Route } from "react-router-dom";
-// import FakeAPI from './Component/Test/API/FakeAPI.js';
-import axios from 'axios'
+import FakeAPI from './Component/Test/API/FakeAPI.js';
 
 // import TicTacToe from './Component/TicTacToe/TicTacToe.js';
-
-class FakeAPI extends React.Component {
-  state = {
-    API: []
-  }
-
-  componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
-      .then(res => {
-        const API = res.data;
-        this.setState({ API });
-      })
-  }
-
-  render() {
-    return (
-      <ul>
-        {
-          this.state.API
-            .map(API =>
-              <li key={API.id}>{API.name}</li>)
-        }
-      </ul>
-    )
-  }
-}
 
 function App() {
   return (
@@ -50,7 +23,7 @@ function App() {
       <Navbar />
       <br />
       <Routes>
-        <Route path='/' element={<div><Home /><About /><Contacts /></div>}></Route>
+        <Route path='/' element={<div><Home />        <About />        <Contacts /></div>}></Route>
       </Routes>
       <br /><br />
       <Form />
