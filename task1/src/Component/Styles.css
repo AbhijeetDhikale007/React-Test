@@ -1,0 +1,24 @@
+button:hover {
+    box-shadow: 2px 2px 20px 5px;
+}
+
+/* Scroll Bar Background */
+::-webkit-scrollbar {
+    background: black;
+    width: 14px;
+}
+
+/* Scrollbar Background Hover */
+::-webkit-scrollbar:hover {
+    border: 1px white solid;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+    background: rgb(206, 72, 19);
+}
+
+/* Scrollbar Thumb Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
