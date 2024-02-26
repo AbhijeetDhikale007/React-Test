@@ -1,7 +1,7 @@
 import React from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 
-class Axios extends React.Component {
+class axios extends React.Component {
     state = {
         API: []
     }
@@ -26,4 +26,4 @@ class Axios extends React.Component {
     }
 }
 
-export default Axios;
+export default axios;
