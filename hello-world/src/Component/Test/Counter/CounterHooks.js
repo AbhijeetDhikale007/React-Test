@@ -4,6 +4,7 @@ function CounterHooks() {
     const SCount = 0;
     const [Count, setCount] = useState(SCount);
 
+    /*
     function Increment() {
         setCount(prevCount => prevCount + 1);
     }
@@ -12,6 +13,11 @@ function CounterHooks() {
         setCount(prevCount => prevCount - 1);
     }
 
+    function Reset () {
+        setCount(prevCount => prevCount = 0)
+    }
+    */
+   
     return (
         <div>
             <h1>Counter Using Hooks</h1>
